@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  Challenge 1:
+        // Mark and John are trying to compare their BMI (Body Mass Index), which is
+        // calculated using the formula:
+        // BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter).
+        // Your tasks:
+        // 1. Store Mark's and John's mass and height in variables
+        // 2. Calculate both their BMIs using the formula (you can even implement both versions)
+        // 3. Create a Boolean variable 'markHigherBMI' containing information about
+        // whether Mark has a higher BMI than John.
+        // Test data:
+        // § Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95m tall.
+        // § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76m tall. 
+
+        // Test data 1
+
+        var markMass = 78;
+        var markHeigh = 1.69;
+
+        var johnMass = 92;
+        var johnHeigh = 1.95;
+
+        var markBMI = markMass / (markHeigh * markHeigh);
+        var johnBMI = johnMass / (johnHeigh * johnHeigh);
+
+        var bmiHigher = markBMI > johnBMI;
+
+        console.log("Mark's BMI: " + markBMI.toFixed(2));
+        console.log("John's BMI: " + johnBMI.toFixed(2));
+        console.log("Mark's BMI is higher than John's: " + bmiHigher);
+
+        //Test data 2
+
+        var markMass2 = 95;
+        var markHeigh2 = 1.88;
+
+        var johnMass2 = 85;
+        var johnHeigh2 = 1.76;
+
+        var markBMI2 = markMass2 / (markHeigh2 * markHeigh2);
+        var johnBMI2 = johnMass2 / (johnHeigh2 * johnHeigh2);
+
+        var bmiHigher2 = markBMI2 > johnBMI2;
+
+        console.log("Mark's BMI: " + markBMI2.toFixed(2));
+        console.log("John's BMI " + johnBMI2.toFixed(2));
+        console.log("Mark's BMI is higher than John's: " + bmiHigher2);
+    </script>
+</body>
+
+</html>
